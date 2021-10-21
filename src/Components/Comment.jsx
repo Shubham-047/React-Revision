@@ -6,12 +6,12 @@ export default function Comment({ replies }) {
     return (
         <div className={styles.comments}>
             <div className={styles.comentBox}>
-        <div className={`show === true ? ${styles.close} : ${styles.line}`} onClick={() => {
+        <div className={styles.close} onClick={() => {
                 setShow(!show)
           }}>
           +</div>
       
-        <div className={styles.box}>
+        <div className={show ? `${styles.box1}`: `${styles.box}`}>
             <div className={styles.subH}>{replies.author}  { replies.points}Points {replies.timestamp}</div>
             <div className={styles.head}>{replies.body}</div>
             
@@ -25,7 +25,7 @@ export default function Comment({ replies }) {
         </div>
     
         {show && (
-            <div>{replies.replies?replies.replies.map((data) => {
+            <div className={styles.box1}>{replies.replies?replies.replies.map((data) => {
                 return <Comment replies={ data}/>
             }):""}</div>
         )}
