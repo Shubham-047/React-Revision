@@ -1,0 +1,46 @@
+.comments{
+   
+
+width: 80%;
+margin: auto;
+border: 2px solid;
+
+
+}
+.comentBox{
+background-color: rgb(154, 151, 151);
+padding: 30px;
+border: none;
+}
+.box{
+    margin-left: 20px;
+}
+.close{
+    cursor: pointer;
+}
+/* .line{
+    width: 3px;
+    background-color: black;
+    height: auto;
+} */
+.head{
+      font-size: 18px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.subH{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(34, 33, 33);
+}
+.btn button{
+    background-color: inherit;
+   
+    cursor: pointer;
+    border:none;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(187, 185, 185);
+    margin:1px;
+}
